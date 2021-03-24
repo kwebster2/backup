@@ -2,6 +2,7 @@ require_relative 'boot'
 
 require 'rails/all'
 
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -17,3 +18,6 @@ module RailsAmusementPark
     # the framework and any gems in your application.
   end
 end
+
+# Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+
